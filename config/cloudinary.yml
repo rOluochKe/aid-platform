@@ -1,0 +1,13 @@
+development:
+  cloud_name: "its-nedum"
+  api_key: "825559472124879"
+  api_secret: "82POnuX-ln1xyhtEhVd0nWogwAY"
+  secure: true
+  cdn_subdomain: true
+
+production:
+  cloud_name: "its-nedum"
+  api_key: "825559472124879"
+  api_secret: "82POnuX-ln1xyhtEhVd0nWogwAY"
+  secure: true
+  cdn_subdomain: true
