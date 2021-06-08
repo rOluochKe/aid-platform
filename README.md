@@ -6,8 +6,8 @@
 - RSpec
 
 ## Front End: React JS
-> View in this [REPO](hhttps://github.com/rOluochKe/aid-platfotm-ui)
-> [Live Demo](https://immense-tor-38293.herokuapp.com/)
+- View in this [REPO](hhttps://github.com/rOluochKe/aid-platfotm-ui)
+- [Live Demo]()
 
 ## Usage
 
