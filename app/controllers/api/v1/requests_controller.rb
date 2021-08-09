@@ -74,6 +74,7 @@ module Api
             # GET: /api/v1/my-requests
             def my_request
                 request = Request.where(user_id: @current_user.id)
+                # request = Request.all
                 if request
                     render json: {
                         status: 'success',
