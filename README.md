@@ -6,8 +6,9 @@
 - RSpec
 
 ## Front End: React JS
+
 - View in this [REPO](hhttps://github.com/rOluochKe/aid-platfotm-ui)
-- [Live Demo]()
+- [Live Demo](https://aid-platform-ui.netlify.app/)
 
 ## Usage
 
@@ -29,7 +30,7 @@ $ cd aid-platform
 $ bundle install
 ```
 
-> Create database, run 
+> Create database, run
 
 ```
 $ rails db:create
@@ -40,6 +41,7 @@ $ rails db:create
 ```
 $ rails db:migrate
 ```
+
 > Test, run test with RSpec:
 
 ```
