@@ -7,8 +7,8 @@
 
 ## Front End: React JS
 
-- [UI REPO](hhttps://github.com/rOluochKe/aid-platfotm-ui)
 - [Live Demo](https://aid-platform-ui.netlify.app/)
+- [UI Repo](https://github.com/rOluochKe/aid-platfotm-ui/)
 
 ## Usage
 
