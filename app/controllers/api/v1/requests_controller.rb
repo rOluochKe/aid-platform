@@ -6,7 +6,11 @@ module Api
             # Get all the request [Any request with status of 1 (fulfilled) should not be displayed]
             # GET: /api/v1/requests
             def index
-                requests = Request.where(status: 0)
+                # requests = Request.where(status: 0).where('created_at <= ?', 1.day.ago).joins(:volunteers).where()
+                # requests = Request.where(status: 0)
+                # requests = Request.joins(:volunteers).group('requests.id').having('count(requests.id) < 5').where(status: 0).where('start_time <= ?', 1.day.ago)
+								# requests = Request.where('start_time > ?', 1.day.ago).where(status: 0)
+				requests = Request.joins(:volunteers).group('requests.id').having('count(requests.id) < 5').where(status: 0).where('start_time > ?', 1.day.ago)
                 if requests
                     render json: requests, :include => {
                         :user => {
@@ -97,6 +101,7 @@ module Api
                 request = Request.find_by_id(params[:id])
                 if request
                     request.status = 1
+										request.start_time = DateTime.now
                     if request.save
                         render json: {
                             status: 'success',
@@ -140,6 +145,7 @@ module Api
                 request = Request.find_by_id(params[:request_id])
                 if request
                     request.republish_status = !request.republish_status
+										request.start_time = DateTime.now
                     if request.save
                         volunteers = Volunteer.where(request_id: params[:request_id])
                         if volunteers

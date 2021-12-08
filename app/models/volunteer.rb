@@ -1,4 +1,5 @@
 class Volunteer < ApplicationRecord
+  # belongs_to :request, counter_cache: true
   belongs_to :request
   belongs_to :user
 
